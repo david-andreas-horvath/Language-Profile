@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Andreas Horvath – Language Enthusiast & HYPIA Polyglot</title>
+    
+    <!-- Open Graph for Social Previews -->
+    <meta property="og:title" content="David Andreas Horvath – Language Enthusiast & HYPIA Polyglot">
+    <meta property="og:description" content="Personal portfolio and book translation roadmap for 'The Flying Adventure'.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+        --bg-color: #0b0d12;
+        --card-border: rgba(255, 255, 255, 0.12);
+        --text-main: #e2e8f0;
+        --text-muted: #94a3b8;
+        --accent-gold: #d97706;
+        --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: var(--bg-color);
+        /* Sterne-Muster */
+        background-image: 
+            radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+            radial-gradient(2px 2px at 40px 70px, #ffffff, rgba(0,0,0,0)),
+            radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+            radial-gradient(2px 2px at 160px 120px, #ffffff, rgba(0,0,0,0));
+        background-repeat: repeat;
+        background-size: 200px 200px;
+        color: var(--text-main);
+        font-family: var(--font-family);
+        line-height: 1.6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 40px 15px;
+    }
+
+    /* MAIN CARD CONTAINER - JETZT MIT DIREKTER TRANSPARENZ & WEBKIT-PREFIX */
+    .card {
+        /* Transparente dunkle Farbe */
+        background-color: rgba(15, 20, 28, 0.4) !important; 
+        border: 1px solid var(--card-border);
+        border-radius: 24px;
+        
+        /* Weichzeichnung reduziert auf 3px, damit kleine Punkte nicht verschwinden */
+        -webkit-backdrop-filter: blur(3px);
+        backdrop-filter: blur(3px);
+        
+        width: 100%;
+        max-width: 680px;
+        padding: 45px 35px;
+        text-align: center;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    }
+
+    /* PROFILE IMAGE */
+    .profile-img {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 20px;
+    }
+
+    /* HEADINGS */
+    h1 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 6px;
+        letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+        font-size: 1.15rem;
+        font-style: italic;
+        color: var(--accent-gold);
+        margin-bottom: 25px;
+        font-weight: 400;
+    }
+
+    /* PARAGRAPHS */
+    p {
+        font-size: 0.95rem;
+        color: var(--text-main);
+        margin-bottom: 18px;
+        font-weight: 300;
+    }
+
+    /* JOURNEY LIST */
+    .journey-box {
+        margin: 25px 0 30px;
+        text-align: center;
+    }
+
+    .journey-title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .journey-list {
+        list-style: none;
+        display: inline-block;
+        text-align: left;
+        font-size: 0.95rem;
+    }
+
+    .journey-list li {
+        margin-bottom: 6px;
+    }
+
+    /* IMAGES IN CARD */
+    .content-img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        border: 1px solid var(--card-border);
+        margin: 20px 0 35px;
+    }
+
+    /* SECTION SEPARATOR */
+    .section-title {
+        font-size: 1.25rem;
+        font-style: italic;
+        color: var(--accent-gold);
+        margin: 35px 0 20px;
+        font-weight: 500;
+    }
+
+    /* TRANSLATION LIST */
+    .translation-list {
+        list-style: none;
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+        line-height: 1.8;
+    }
+
+    /* FOOTER / CREDIT */
+    .footer-text {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        margin-top: 25px;
+        line-height: 1.5;
+    }
+
+    .globe-icon {
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 1.2rem;
+        color: var(--accent-gold);
+        text-decoration: none;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 480px) {
+        .card {
+            padding: 30px 20px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- PROFILE PICTURE (Relative Pfade) -->
+        <img src="David.png" alt="David Andreas Horvath" class="profile-img" onerror="this.src='https://via.placeholder.com/110'">
+
+        <!-- HEADER -->
+        <h1>David Andreas Horvath</h1>
+        <div class="subtitle">Language Enthusiast & HYPIA Polyglot</div>
+
+        <!-- INTRO TEXT -->
+        <p>I have been interested for many years in learning new languages, new grammar structures and new alphabets.</p>
+
+        <p>I was raised bilingual in German and Burgenland Croatian. I belong to a minority that has spoken Burgenland Croatian since the 16th century; there are only about 55,000 to 100,000 of us worldwide. I learned the Cyrillic alphabet in school, and when I was in Moscow, I was able to read the signs even though I didn't understand everything yet.</p>
+
+        <p>This experience was the primary motivation for my interest in languages.</p>
+
+        <!-- JOURNEY LIST -->
+        <div class="journey-box">
+            <div class="journey-title">My journey started with:</div>
+            <ul class="journey-list">
+                <li>1) 🇷🇺 Russian - 5 years of learning</li>
+                <li>2) 🇲🇰 Macedonian - 1.5 years of learning</li>
+                <li>3) 🇮🇷 Persian - 2 years of learning</li>
+                <li>4) 🇮🇳/🇵🇰 Hindi/Urdu - Learning at the moment</li>
+            </ul>
+        </div>
+
+        <!-- FIRST GRAPHIC: LINGUISTIC SOLAR SYSTEM -->
+        <img src="Language_Solar_System.jpeg" alt="My Linguistic Solar System" class="content-img" onerror="this.src='https://via.placeholder.com/600x350/171b24/d97706?text=Linguistic+Solar+System+Image'">
+
+        <!-- SECTION 2: BOOK TRANSLATIONS -->
+        <div class="section-title">Book Translations & Roadmap – The Flying Adventure (Valerin)</div>
+
+        <ul class="translation-list">
+            <li><strong>German</strong> – Das fliegende Abenteuer (Valerin) [ready]</li>
+            <li><strong>English</strong> – The Flying Adventure (Valerin) [planned]</li>
+            <li><strong>Hrvatski</strong> – Leteća pustolovina (Valerin) [in progress]</li>
+            <li><strong>Gradišćanskohrvatski</strong> – Letuća avantura (Valerin) [planned]</li>
+            <li><strong>Русский</strong> – Летучее приключение (Валерин) [planned]</li>
+            <li><strong>Македонски</strong> – Летечка авантура (Валерин) [planned]</li>
+            <li><strong>فارسی</strong> – ماجراجویی پرواز (والرین) [planned]</li>
+            <li><strong>हिंदी</strong> – द फ्लाइंग एडवेंचर (वैलेरिन) [planned]</li>
+            <li><strong>اردو</strong> – دی فلائنگ ایڈونچر (ولیرین) [planned]</li>
+        </ul>
+
+        <!-- SECOND GRAPHIC: VALERIN SOLAR SYSTEM -->
+        <img src="Finished_Roadmap.jpeg" alt="Valerin Book Solar System" class="content-img" onerror="this.src='https://via.placeholder.com/600x350/171b24/d97706?text=Valerin+Solar+System+Image'">
+
+        <!-- FOOTER CREDITS -->
+        <div class="footer-text">
+            All editions created by DI (FH) David Andreas Horvath.<br>
+            First published on this website: September 2026
+        </div>
+
+        <div>
+            <a href="https://www.polyglotassociation.org/members/david-andreas-horvath" class="globe-icon" target="_blank" rel="noopener">🌐</a>
+        </div>
+    </div>
+
+</body>
+</html>
