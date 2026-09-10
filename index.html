@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Charset & Viewport zwingend nötig -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Andreas Horvath – Language Enthusiast & HYPIA Polyglot</title>
-    
+
+    <!-- Primary Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Personal portfolio and language translation roadmap of David Andreas Horvath, HYPIA polyglot. Discover 'The Flying Adventure' book translations.">
+    <meta name="keywords" content="David Andreas Horvath, HYPIA, Polyglot, Burgenland Croatian, Das fliegende Abenteuer, Language Learning, Translation Roadmap">
+    <meta name="author" content="DI (FH) David Andreas Horvath">
+
     <!-- Open Graph for Social Previews -->
     <meta property="og:title" content="David Andreas Horvath – Language Enthusiast & HYPIA Polyglot">
     <meta property="og:description" content="Personal portfolio and book translation roadmap for 'The Flying Adventure'.">
@@ -14,6 +21,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Canonical URL (Ersetze mit deiner echten URL) -->
+    <link rel="canonical" href="https://dein-username.github.io/repository-name/">
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "David Andreas Horvath",
+      "jobTitle": "Engineer & Polyglot",
+      "url": "https://dein-username.github.io/repository-name/",
+      "sameAs": [
+        "https://www.polyglotassociation.org/members/david-andreas-horvath"
+      ],
+      "knowsLanguage": [
+        "German", "Burgenland Croatian", "English", "Croatian", 
+        "Russian", "Macedonian", "Persian", "Hindi", "Urdu"
+      ]
+    }
+    </script>
 
 <style>
     :root {
@@ -51,14 +79,12 @@
         padding: 40px 15px;
     }
 
-    /* MAIN CARD CONTAINER - JETZT MIT DIREKTER TRANSPARENZ & WEBKIT-PREFIX */
+    /* MAIN CARD CONTAINER */
     .card {
-        /* Transparente dunkle Farbe */
         background-color: rgba(15, 20, 28, 0.4) !important; 
         border: 1px solid var(--card-border);
         border-radius: 24px;
         
-        /* Weichzeichnung reduziert auf 3px, damit kleine Punkte nicht verschwinden */
         -webkit-backdrop-filter: blur(3px);
         backdrop-filter: blur(3px);
         
