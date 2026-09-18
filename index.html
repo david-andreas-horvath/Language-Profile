@@ -285,6 +285,16 @@
         text-decoration: underline;
     }
 
+    /* FOOTER CONTAINER */
+    .footer-container {
+        background-color: rgba(0, 0, 0, 0.25);
+        border-top: 1px solid var(--card-border);
+        margin: 35px -35px -45px -35px; /* Dehnt den Container exakt bis an die Ränder der Karte aus */
+        padding: 20px 35px 25px 35px;
+        border-bottom-left-radius: 24px;  /* Gleicher Radius wie die Hauptkarte */
+        border-bottom-right-radius: 24px;
+    }
+
     /* RESPONSIVE DESIGN */
     @media (max-width: 480px) {
         .card {
@@ -358,19 +368,21 @@
             First published on this website: September 2026
         </div>
 
-        <!-- LINE -->
-        <hr class="divider">
-
-        <!-- ICON BAR WITH LINKS AND POPUP TRIGGER -->
-        <div class="icon-bar">
-            <!-- HYPIA Link -->
-            <a href="https://www.polyglotassociation.org/members/david-andreas-horvath" class="footer-icon" target="_blank" rel="noopener" title="HYPIA Profile">🌐</a>
-            
-            <!-- Email Link -->
-            <a href="mailto:autor.david.andreas.horvath@gmail.com" class="footer-icon" title="Contact Email">✉️</a>
-            
-            <!-- Legal Notice / Impressum Popup Trigger -->
-            <span class="footer-icon" onclick="openImpressum()" title="Legal Notice / Impressum">§</span>
+        <!-- FOOTER CONTAINER WITH ICONS -->
+        <div class="footer-container">
+            <div class="icon-bar" style="margin-top: 0;"></div>
+                <!-- ICON BAR WITH LINKS AND POPUP TRIGGER -->
+                <div class="icon-bar">
+                    <!-- HYPIA Link -->
+                    <a href="https://www.polyglotassociation.org/members/david-andreas-horvath" class="footer-icon" target="_blank" rel="noopener" title="HYPIA Profile">🌐</a>
+                    
+                    <!-- Email Link -->
+                    <a href="mailto:autor.david.andreas.horvath@gmail.com" class="footer-icon" title="Contact Email">✉️</a>
+                    
+                    <!-- Legal Notice / Impressum Popup Trigger -->
+                    <span class="footer-icon" onclick="openImpressum()" title="Legal Notice / Impressum">§</span>
+                </div>
+            </div>
         </div>
     </div>
 
